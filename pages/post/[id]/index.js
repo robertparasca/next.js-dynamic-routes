@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import Head from 'next/head'
 import Header from '../../../components/header'
 
 const Post = () => {
@@ -8,6 +9,9 @@ const Post = () => {
 
   return (
     <>
+    <Head>
+     <meta property="og:image" content="https://scoaladebani-reshape.gd.ro/images/share-preview.png" />
+    </Head>
       <Header />
       <h1>Post: {id}</h1>
       <ul>
